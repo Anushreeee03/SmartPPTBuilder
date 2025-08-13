@@ -128,7 +128,7 @@ if research_btn:
             st.error("No results found.")
         else:
             st.session_state["hits"] = hits
-            st.markdown('<div class="glass-card">', unsafe_allow_html=True)
+            
             st.markdown("### 📚 Candidate Sources")
             for h in hits:
                 st.markdown(f"**{h.get('title')}**  \n{h.get('url')}")
