@@ -1,3 +1,4 @@
+
 # app.py 
 import streamlit as st
 from agents import search_duckduckgo, extract_article_text, build_six_topic_slides_from_sources
@@ -97,6 +98,43 @@ div[data-testid="stTextInput"] > div > input::placeholder {
     color: #9a85b8;
     opacity: 0.8;
 }
+            
+/* ---- Alert Styling for Better Visibility ---- */
+.stAlert {
+    border-radius: 10px !important;
+    font-weight: 500 !important;
+}
+
+/* Make all alert text visible & dark */
+.stAlert p, .stAlert div, .stAlert span {
+    color: #3b2c4a !important;  /* Dark purple text */
+    font-weight: 600 !important;
+}
+
+/* Success */
+.stAlert[data-baseweb="notification"][class*="success"] {
+    background-color: rgba(199, 157, 242, 0.15) !important;
+    border: 1px solid rgba(167, 117, 214, 0.5) !important;
+}
+
+/* Info */
+.stAlert[data-baseweb="notification"][class*="info"] {
+    background-color: rgba(167, 117, 214, 0.15) !important;
+    border: 1px solid rgba(167, 117, 214, 0.5) !important;
+}
+
+/* Warning */
+.stAlert[data-baseweb="notification"][class*="warning"] {
+    background-color: rgba(255, 204, 102, 0.2) !important;
+    border: 1px solid rgba(255, 204, 102, 0.5) !important;
+}
+
+/* Error */
+.stAlert[data-baseweb="notification"][class*="error"] {
+    background-color: rgba(255, 102, 102, 0.2) !important;
+    border: 1px solid rgba(255, 102, 102, 0.5) !important;
+}
+
 
 /* Hide Streamlit default menu & footer */
 #MainMenu, footer, header {visibility: hidden;}
