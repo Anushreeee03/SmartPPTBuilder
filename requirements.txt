@@ -8,6 +8,7 @@ python-dotenv
 duckduckgo-search
 beautifulsoup4
 requests
+readability-lxml
 
 # PPT generation
 python-pptx
