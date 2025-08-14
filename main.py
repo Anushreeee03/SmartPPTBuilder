@@ -1,5 +1,5 @@
 
-# app.py 
+# main.py
 import streamlit as st
 from agents import search_duckduckgo, extract_article_text, build_six_topic_slides_from_sources
 from ppt_generator import build_ppt_from_slides
