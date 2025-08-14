@@ -1,0 +1,24 @@
+# Core app framework
+streamlit
+
+# Environment variables
+python-dotenv
+
+# Web search & scraping
+duckduckgo-search
+beautifulsoup4
+requests
+
+# PPT generation
+python-pptx
+
+# Data handling
+pandas
+numpy
+
+# LLM / AI related
+openai
+tiktoken
+
+# Utility libraries
+lxml
