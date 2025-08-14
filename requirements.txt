@@ -20,6 +20,7 @@ numpy
 # LLM / AI related
 openai
 tiktoken
+sentence-transformers
 
 # Utility libraries
 lxml
